@@ -55,4 +55,4 @@ A bateria usada foi a NH2054 da Inspired Energy, é uma bateria de 14.4 V com 6.
 
 ### Imagem Bateria Frontal
 
-![Bateria Frontal] (https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_frontal.jpeg)
+![Bateria_Frontal] (https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_frontal.jpeg)
