@@ -53,6 +53,10 @@ Mecânico: Conector de ponta com 260 pinos
 
 A bateria usada foi a NH2054 da Inspired Energy, é uma bateria de 14.4 V com 6.2 Ah. Essa bateria foi escolhida para ter mais tempo de uso sem necessidade de recarregar varias vezes. Mas para usar uma bateria dessas foi necessário ter um regulador de 5 Volts para alimentar a Jetson. 
 
-### Imagem Bateria Frontal
+### Bateria Frontal
 
-![Bateria_Frontal] (https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_frontal.jpeg)
+![Bateria_Frontal](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_frontal.jpeg)
+
+### Bateria Traseiro
+
+![bateria_traseira](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_verso.jpeg)
