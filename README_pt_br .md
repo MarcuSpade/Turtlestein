@@ -90,5 +90,6 @@ A Jetson por fábrica só tem acesso ao Ubuntu 18.04, porém graças ao Qenginee
 https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image
 
 
-Você vai baixar a imagem nesse link (https://ln5.sync.com/dl/f65071870/b5vp32ch-8s23cgn4-b9e4w24q-i2sf9aw2/view/default/13150797710004)
-
+- Você vai baixar a imagem nesse [link](https://ln5.sync.com/dl/f65071870/b5vp32ch-8s23cgn4-b9e4w24q-i2sf9aw2/view/default/13150797710004)
+- Fazer um flash no sdcard com o [balenaEtcher](https://etcher.balena.io/#download-etcher)
+- 
