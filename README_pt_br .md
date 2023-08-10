@@ -19,8 +19,8 @@ O TurtleBot é um robô de plataforma padrão do ROS. A inspiração para o nome
 
 O TUrtlebot 3 tem 3 versões. o Burger, o Waffle e o Waffle Pi. Vamos utilizar o Waffle Pi
 
-## Jetson Nano
 
+## Jetson Nano
 
 Jetson Nano é uma placa que funciona como um computador de bolso capaz de várias aplicações principalmente com redes neurais e IA. 
 
