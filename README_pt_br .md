@@ -163,12 +163,12 @@ Se está usando o LDS-02 deve instalar o drive dele
     cd ~/turtlebot3_ws/src/turtlebot3 && git pull
     cd ~/turtlebot3_ws && colcon build --symlink-install
 
-#### Configuração de Ambiente
+### Configuração de Ambiente
 
     echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
     source ~/.bashrc
 
-#### Configuração OpenCR
+### Configuração OpenCR
 
 Para fazer essa configuração é necessário conectar o OpenCR ao Jetson via cabo microUSB
 
@@ -203,5 +203,14 @@ Faça o upload do firmware do OpenCR
 Se tudo der certo seu terminal deve ficar parecido com a imagem abaixo.
 
 ![update_OpenCR](https://emanual.robotis.com/assets/images/platform/turtlebot3/opencr/shell01.png)
+
+
+## Montagem
+
+Para realizar a montagem é só seguir o passo a passo que está no site da [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/)
+
+Abaixo uma foto da placa montada na estrutura
+
+![placa_montada](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/WhatsApp%20Image%202023-08-10%20at%2015.46.54.jpeg)
 
 
