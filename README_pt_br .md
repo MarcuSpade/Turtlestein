@@ -11,6 +11,8 @@ Este projeto foi desenvolvido para adaptar uma jetson Nano com ubuntu 20.04, a i
 - Bateria
 - Sd card 64GB ou mais
 - Adaptador Wifi
+- Teclado e mouse usb
+- Monitor com entrada hdmi
 
 
 ## Turtlebot 3 Waffle Pi
@@ -70,7 +72,7 @@ A bateria usada foi a NH2054 da Inspired Energy, é uma bateria de 14.4 V com 6.
 
 ### Regulador de Tesnsão de 5 V
 
-![Regulador_de_tensao]()
+![Regulador_de_tensao](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/regulador_tensao.jpeg)
 
 
 ## Adaptador Wifi
@@ -96,4 +98,10 @@ https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image
 
 - Você vai baixar a imagem nesse [link](https://ln5.sync.com/dl/f65071870/b5vp32ch-8s23cgn4-b9e4w24q-i2sf9aw2/view/default/13150797710004)
 - Fazer um flash no sdcard com o [balenaEtcher](https://etcher.balena.io/#download-etcher)
-- 
+- Conectar o sdcard na Jetson
+- Conectar um monitor no hdmi, e um teclado e mouse usb.
+
+### Instalação do ROS2 e pacotes
+
+As Instruções abaixo foram adaptadas do passo a passo do Turtlebot3 disponível no site da [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/) , se você quiser fazer o passo a passo por lá, pode fazer.
+
