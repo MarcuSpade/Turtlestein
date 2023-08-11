@@ -77,7 +77,7 @@ A bateria usada foi a NH2054 da Inspired Energy, é uma bateria de 14.4 V com 6.
 
 ## Adaptador Wifi
 
-Usei um adaptador genérico modelo ka-t8188, foi bem difícil achar o driver dele para funcionar no Ubuntu 20.04, mas consegui achar no github do @kelebek333, vou deixar o link do github dele mostrando toda a configuração para esse adaptador.
+Usei um adaptador genérico modelo ka-t8188, foi bem difícil achar o driver dele para funcionar no Ubuntu 20.04, mas consegui achar no github do [@kelebek333](https://github.com/kelebek333), vou deixar o link do github dele mostrando toda a configuração para esse adaptador.
 
 https://github.com/kelebek333/rtl8188fu
 
@@ -91,7 +91,7 @@ https://github.com/kelebek333/rtl8188fu
 
 ## Configuração da Jetson
 
-A Jetson por fábrica só tem acesso ao Ubuntu 18.04, porém graças ao Qengineering que desenvolveu uma nova imagem para o Jetson, temos acesso ao Ubuntu 20.04, por isso vou deixar abeixo o link do github dele.
+A Jetson por fábrica só tem acesso ao Ubuntu 18.04, porém graças ao [Qengineering](https://github.com/Qengineering) que desenvolveu uma nova imagem para o Jetson, temos acesso ao Ubuntu 20.04, por isso vou deixar abeixo o link do github dele.
 
 https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image
 
@@ -149,9 +149,20 @@ Existem duas versões de Sensor LDS para o Turlebot3, os modelos a partir do ano
 
 ![LDS_02](https://emanual.robotis.com/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)
 
+Se você está utilizando o LDS-01 só precisa exportar o modelo para o .bashrc
 
+    echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc
+    source ~/.bashrc
 
+Se está usando o LDS-02 deve instalar o drive dele
 
+    sudo apt update
+    sudo apt install libudev-dev
+    cd ~/turtlebot3_ws/src
+    git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
+    cd ~/turtlebot3_ws/src/turtlebot3 && git pull
+    cd ~/turtlebot3_ws && colcon build --symlink-install
+    
 #### Configuração de Ambiente
 
     echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
