@@ -182,8 +182,6 @@ A successful firmware upload for TurtleBot3 Burger will look like below
 
 To assemble, just follow the step-by-step instructions provided on the website [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/hardware_setup/)
 
-Below is a photo of the board mounted on the structure
 
-![placa_montada](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/WhatsApp%20Image%202023-08-10%20at%2015.46.54.jpeg)
 
 
