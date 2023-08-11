@@ -68,10 +68,14 @@ A bateria usada foi a NH2054 da Inspired Energy, é uma bateria de 14.4 V com 6.
 
 ![bateria_traseira](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_verso.jpeg)
 
+### Regulador de Tesnsão de 5 V
+
+![Regulador_de_tensao]()
+
 
 ## Adaptador Wifi
 
-Usei um adaptador genérico modelo ka-t8188, foi bem difícil achar o driver dele para funcionar no Ubuntu 20.04 mas consegui achar no github do @kelebek333, vou deixar o link do github dele mostrando toda a configuração para esse adaptador.
+Usei um adaptador genérico modelo ka-t8188, foi bem difícil achar o driver dele para funcionar no Ubuntu 20.04, mas consegui achar no github do @kelebek333, vou deixar o link do github dele mostrando toda a configuração para esse adaptador.
 
 https://github.com/kelebek333/rtl8188fu
 
