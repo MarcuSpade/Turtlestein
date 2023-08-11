@@ -4,6 +4,8 @@
 
 This project was developed to adapt a Jetson Nano with Ubuntu 20.04. The idea is that with Jetson, the Turtlebot will have more capabilities to work with embedded software, thus reducing the dependency on always being connected to a computer. Therefore, most of the code will be run within Jetson.
 
+This project is a adaptation [@tiago369](https://github.com/tiago369) project, and he supported and adviced me in this project, Thanks!
+
 
 
 # Used Materials
