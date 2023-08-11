@@ -1,2 +1,2 @@
 # Turtlestein
-Esse repositório foi feito para explicar todo o processo de adaptação de uma Turtlebot com a Jetson nano, com ubuntu 20.04.
+This repository was created to explain the entire process of adapting a Turtlebot with Jetson Nano, using Ubuntu 20.04.
