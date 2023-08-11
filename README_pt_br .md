@@ -100,8 +100,60 @@ https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image
 - Fazer um flash no sdcard com o [balenaEtcher](https://etcher.balena.io/#download-etcher)
 - Conectar o sdcard na Jetson
 - Conectar um monitor no hdmi, e um teclado e mouse usb.
+- Conectar a Jetson a Internet via cabo ou fazendo o passo a passo para usar o adaptador wifi
+
+![Jetson_Ubuntu](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/jetson_ubuntu2004.jpeg)
+
 
 ### Instalação do ROS2 e pacotes
 
-As Instruções abaixo foram adaptadas do passo a passo do Turtlebot3 disponível no site da [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/) , se você quiser fazer o passo a passo por lá, pode fazer.
+As Instruções abaixo foram adaptadas do passo a passo do Turtlebot3 disponível no site da [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/) , se você quiser fazer o passo a passo por lá, pode fazer. Porém lembre que o objetivo é que o código seja rodado completamente embarcado, sendo assim, o passo a passo tanto do [PC_Setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup) quanto o do [SBC_Setup](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup) será feito na Jetson
+
+#### Instalação do ROS2 Foxy
+
+O Ubuntu 20.04 só permite a instalação do ROS2 FOXY, sendo assim vamos instalar ele, tentei instalar a versão direto do site oficial do ROS porém não consegui instalar na Jetson então instalei a versão da Robotis mesmo.
+
+    wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros2_foxy.sh
+    sudo chmod 755 ./install_ros2_foxy.sh
+    bash ./install_ros2_foxy.sh
+
+#### Instalação dos pacotes do ROS2 e Turtlebot3
+
+    sudo apt install ros-foxy-cartographer
+    sudo apt install ros-foxy-cartographer-ros
+    sudo apt install ros-foxy-navigation2
+    sudo apt install ros-foxy-nav2-bringup
+    sudo apt install ros-foxy-dynamixel-sdk
+    sudo apt install ros-foxy-turtlebot3-msgs
+    sudo apt install ros-foxy-turtlebot3
+    sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
+    sudo apt install ros-foxy-hls-lfcd-lds-driver
+    mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
+    git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+    cd ~/turtlebot3_ws/
+    echo 'source /opt/ros/foxy/setup.bash' >> ~/.bashrc
+    source ~/.bashrc
+    colcon build --symlink-install --parallel-workers 1
+    echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+    source ~/.bashrc
+    
+#### Configuração Driver LDS
+
+Existem duas versões de Sensor LDS para o Turlebot3, os modelos a partir do ano de 2022 vem com o modelo LDS-02, então veja se você está com o modelo LDS-01 ou o LDS-02
+
+##### LDS-01
+
+![LDS_01](https://emanual.robotis.com/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)
+
+##### LDS-02
+
+![LDS_02](https://emanual.robotis.com/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)
+
+
+
+
+#### Configuração de Ambiente
+
+    echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+    source ~/.bashrc
 
