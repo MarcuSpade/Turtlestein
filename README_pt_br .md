@@ -162,9 +162,46 @@ Se está usando o LDS-02 deve instalar o drive dele
     git clone -b ros2-devel https://github.com/ROBOTIS-GIT/ld08_driver.git
     cd ~/turtlebot3_ws/src/turtlebot3 && git pull
     cd ~/turtlebot3_ws && colcon build --symlink-install
-    
+
 #### Configuração de Ambiente
 
     echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
     source ~/.bashrc
+
+#### Configuração OpenCR
+
+Para fazer essa configuração é necessário conectar o OpenCR ao Jetson via cabo microUSB
+
+![montagem_jetson]()
+
+    sudo cp `ros2 pkg prefix turtlebot3_bringup`/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules /etc/udev/rules.d/
+    sudo udevadm control --reload-rules
+    sudo udevadm trigger
+
+Instale os pacotes para fazer o upload do firmware
+
+    sudo dpkg --add-architecture armhf
+    sudo apt update
+    sudo apt install libc6:armhf
+
+Dependendo da plataforma use burger ou waffle para o OPENCR_MODEL
+
+    export OPENCR_PORT=/dev/ttyACM0
+    export OPENCR_MODEL=burger
+    rm -rf ./opencr_update.tar.bz2
+
+Faça o download do firmware e loader, depois extraia o arquivo
+
+    wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.bz2
+    tar -xvf ./opencr_update.tar.bz2
+
+Faça o upload do firmware do OpenCR
+
+    cd ~/opencr_update
+    ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+
+Se tudo der certo seu terminal deve ficar parecido com a imagem abaixo.
+
+![update_OpenCR](https://emanual.robotis.com/assets/images/platform/turtlebot3/opencr/shell01.png)
+
 
