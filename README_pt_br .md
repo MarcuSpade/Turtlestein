@@ -172,7 +172,7 @@ Se está usando o LDS-02 deve instalar o drive dele
 
 Para fazer essa configuração é necessário conectar o OpenCR ao Jetson via cabo microUSB
 
-![montagem_jetson]()
+![montagem_jetson](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/WhatsApp%20Image%202023-08-10%20at%2015.46.54.jpeg)
 
     sudo cp `ros2 pkg prefix turtlebot3_bringup`/share/turtlebot3_bringup/script/99-turtlebot3-cdc.rules /etc/udev/rules.d/
     sudo udevadm control --reload-rules
