@@ -1,4 +1,4 @@
-# Turtlestein (Turtlebot com Jetson Nano e Ubuntu 20.04)
+# Turtlestein (Turtlebot with Jetson Nano and Ubuntu 20.04)
 
 # About this Project
 
