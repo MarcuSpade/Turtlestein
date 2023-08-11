@@ -46,13 +46,13 @@ Jetson Nano is a board that functions as a pocket-sized computer capable of vari
 The used battery is the NH2054 from Inspired Energy, a 14.4V battery with 6.2Ah capacity. This battery was chosen for extended usage without frequent recharging. However, to use this battery, a 5V regulator was required to power the Jetson.
 
 ### Front Battery
-![Front_Battery](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Battery_Front.jpeg)
+![Front_Battery](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_frontal.jpeg)
 
 ### Rear Battery
-![Rear_Battery](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Battery_Rear.jpeg)
+![Rear_Battery](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Bateria_verso.jpeg)
 
 ### 5V Voltage Regulator
-![Voltage_Regulator](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/Voltage_Regulator.jpeg)
+![Voltage_Regulator](https://github.com/MarcuSpade/Turtlestein/blob/main/Assets/regulador_tensao.jpeg)
 
 ## WiFi Adapter
 
